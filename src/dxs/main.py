@@ -78,7 +78,7 @@ def init():
     )
     license = prompt(
         f"Project License {style('(Apache)', fg=colors.GREEN, bold=True)}",
-        default="MIT",
+        default="apache-2.0",
         show_default=False,
     )
     description = prompt(
@@ -109,7 +109,7 @@ def init():
             "dependencies": [],
             "requires-python": python,
             "readme": "README.md",
-            "keywords": ["qa"],
+            "keywords": ["dxs"],
             "classifiers": [
                 "Topic :: Software Development :: Build Tools",
                 "Programming Language :: Python :: 3.8",
@@ -124,7 +124,7 @@ def init():
                 "Documentation": f"https://github.com/{author}/{name}/blob/main/README.md",
                 "Changelog": f"https://github.com/{author}/{name}/blob/main/README.md",
             },
-            "scripts": {"qa": "qa.main:app"},
+            "scripts": {"dxs": "dxs.main:app"},
         },
         "build-system": {
             "requires": ["pdm-backend"],
