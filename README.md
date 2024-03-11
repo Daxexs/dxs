@@ -3,7 +3,7 @@
 [![Downloads](https://static.pepy.tech/badge/qa)](https://pepy.tech/project/qa) [![image](https://img.shields.io/pypi/pyversions/qa.svg)](https://pypi.python.org/pypi/qa) [![image](https://img.shields.io/pypi/v/qa.svg)](https://pypi.python.org/pypi/qa) [![image](https://img.shields.io/pypi/l/qa.svg)](https://pypi.python.org/pypi/qa)
 
 <div align="center">
-    <img src="media/logo.png" alt="logo" width="200">
+    <img src="https://github.com/Daxexs/Test-PR/blob/main/media/logo.png?raw=true" alt="logo" width="200">
 </div>
 
 

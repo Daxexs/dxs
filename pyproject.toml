@@ -1,10 +1,10 @@
 [project]
 name = "qa"
-version = "0.1.0"
+version = "0.1.0.dev2510"
 license = { text = "apache-2.0" }
 description = "Cli tool to create a project structure."
 authors = [{ name = "Daxexs", email = "Daxexsdev@gmail.com" }]
-dependencies = ["flet", "typer[all]", "toml", "setuptools", "wheel", "twine"]
+dependencies = ["typer[all]", "toml", "twine", "build"]
 
 requires-python = ">=3.8"
 readme = "README.md"
@@ -29,15 +29,15 @@ Changelog = "https://github.com/Daxexs/vu/blob/main/README.md"
 [project.scripts]
 qa = "qa.main:app"
 
-
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
-[tool.setuptools]
-package-dir = { "" = "src" }
+[tool.pdm]
+distribution = true
 
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["pkg*"]
-namespaces = false
+[tool.pdm.build]
+excludes = ["./**/.git"]
+package-dir = "src"
+includes = ["src/qa"]
+source-includes = ["LICENSE", "README.md"]
