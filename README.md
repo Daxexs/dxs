@@ -1,33 +1,33 @@
-[![github](https://img.shields.io/badge/my_profile-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Daxexs)[![pypi](https://img.shields.io/badge/Pypi-0A66C2?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/qa)
+[![github](https://img.shields.io/badge/my_profile-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Daxexs)[![pypi](https://img.shields.io/badge/Pypi-0A66C2?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/dxs)
 
-[![Downloads](https://static.pepy.tech/badge/qa)](https://pepy.tech/project/qa) [![image](https://img.shields.io/pypi/pyversions/qa.svg)](https://pypi.python.org/pypi/qa) [![image](https://img.shields.io/pypi/v/qa.svg)](https://pypi.python.org/pypi/qa) [![image](https://img.shields.io/pypi/l/qa.svg)](https://pypi.python.org/pypi/qa)
+[![Downloads](https://static.pepy.tech/badge/dxs)](https://pepy.tech/project/dxs) [![image](https://img.shields.io/pypi/pyversions/dxs.svg)](https://pypi.python.org/pypi/dxs) [![image](https://img.shields.io/pypi/v/dxs.svg)](https://pypi.python.org/pypi/dxs) [![image](https://img.shields.io/pypi/l/dxs.svg)](https://pypi.python.org/pypi/dxs)
 
 <div align="center">
-    <img src="media/logo.png" alt="logo" width="200">
+    <img src="https://github.com/Daxexs/dxs/blob/main/media/logo.png?raw=true" alt="logo" width="200">
 </div>
 
 
-# 🔥qa
-`qa` is a client that takes care of creating the structure of a python project, it also supports packaging for pypi.org.
+# 🔥dxs
+`dxs` is a client that takes care of creating the structure of a python project, it also supports packaging for pypi.org.
 
 ## 💻Installation:
 
 ```bash
-  pip install qa
+  pip install dxs
 ```
 
 ## 💻Update:
 ```bash
-  pip install qa --upgrade
+  pip install dxs --upgrade
 ```
 
 ## 🔎 init:
 > **To initialize the creation of a project structure.**
 ```bash
-  qa init
+  dxs init
 ```
 ## 🔎 version:
 > **To know the version.**
 ```bash
-  qa version
+  dxs version
 ```

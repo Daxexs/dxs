@@ -1,15 +1,15 @@
 [project]
-name = "qa"
-version = "0.1.0"
+name = "dxs"
+version = "0.1.0.dev2520"
 license = { text = "apache-2.0" }
 description = "Cli tool to create a project structure."
 authors = [{ name = "Daxexs", email = "Daxexsdev@gmail.com" }]
-dependencies = ["flet", "typer[all]", "toml", "setuptools", "wheel", "twine"]
+dependencies = ["typer[all]", "toml", "twine", "build"]
 
 requires-python = ">=3.8"
 readme = "README.md"
 
-keywords = ["qa", "cli", "uv cli"]
+keywords = ["dxs", "cli", "dxs cli"]
 classifiers = [
     "Topic :: Software Development :: Build Tools",
     "Programming Language :: Python :: 3.8",
@@ -21,23 +21,23 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/Daxexs"
-Repository = "https://github.com/Daxexs/vu"
-Documentation = "https://github.com/Daxexs/vu/blob/main/README.md"
-Changelog = "https://github.com/Daxexs/vu/blob/main/README.md"
+Repository = "https://github.com/Daxexs/dxs"
+Documentation = "https://github.com/Daxexs/dxs/blob/main/README.md"
+Changelog = "https://github.com/Daxexs/dxs/blob/main/README.md"
 
 
 [project.scripts]
-qa = "qa.main:app"
-
+dxs = "dxs.main:app"
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
-[tool.setuptools]
-package-dir = { "" = "src" }
+[tool.pdm]
+distribution = true
 
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["pkg*"]
-namespaces = false
+[tool.pdm.build]
+excludes = ["./**/.git"]
+package-dir = "src"
+includes = ["src/dxs"]
+source-includes = ["LICENSE", "README.md"]
